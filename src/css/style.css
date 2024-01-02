@@ -1,0 +1,227 @@
+body {
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho"
+                         "hero hero hero hero"
+                         "sobre sobre sobre sobre"
+                         "servicos servicos servicos servicos"
+                         "projetos projetos projetos projetos"
+                         "rodape rodape rodape rodape";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+#hero {
+    grid-area: hero;
+    background: url('../imagens/lemons.jpg') center center no-repeat;
+    background-size: cover;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    background: url('../imagens/seta_preta.png') center no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 60px;
+    width: 20px;
+    height: 40px;
+    animation: slide 1s infinite alternate;
+}
+
+#hero h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#sobre {
+    grid-area: sobre;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#sobre .item {
+    text-align: center;
+    padding: 20%;
+}
+
+#sobre .item h3 {
+    font-size: 3rem;
+}
+
+#sobre .item p {
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+#sobre .item a {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#sobre .image.right {
+    background-image: url(../imagens/landscape.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#sobre .image.left {
+    background-image: url(../imagens/sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.servicos {
+    grid-area: servicos;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.servicos .servico {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.servicos .servico img{
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.servicos .servico .info-servico h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.servicos .servico .info-servico p {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 20px auto 0;
+    line-height: 25px;
+}
+
+.servicos .servico:nth-child(1) {
+    background-color: lightskyblue;
+}
+
+.servicos .servico:nth-child(2) {
+    background-color: lightpink;
+}
+
+#projetos {
+    grid-area: projetos;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#projetos .projeto  img {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#projetos .projeto  img:hover {
+    opacity: 0.8;
+}
+
+.rodape {
+    grid-area: rodape;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 100px 0;
+}
+
+.rodape h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.rodape nav {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.rodape nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.rodape nav ul li a {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape nav ul li a:hover {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.rodape .redes-sociais a{
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover {
+    color: white;
+}
+
+.rodape .redes-sociais a {
+    margin: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #projetos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    #hero h2 {
+        font-size: 25px;
+    }
+
+    #sobre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .servicos {
+        grid-template-columns: 1fr;
+    }
+
+    #projetos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
