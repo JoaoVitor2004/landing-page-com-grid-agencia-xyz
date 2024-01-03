@@ -186,17 +186,13 @@ html {
 
 .rodape .redes-sociais a{
     font-size: 2rem;
+    margin: 0 20px;
     transition: 0.2s ease-in-out;
 }
 
 .rodape .redes-sociais a:hover {
     color: white;
 }
-
-.rodape .redes-sociais a {
-    margin: 20px;
-}
-
 
 
 @media (max-width: 768px) {

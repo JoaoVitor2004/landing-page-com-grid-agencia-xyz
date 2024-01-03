@@ -82,6 +82,11 @@
 
 @media (max-width: 900px) {
 
+    .cabecalho {
+        padding: 20px 0 20px 50px;
+        align-items: flex-start;
+    }
+
     .cabecalho nav label {
         display: flex;
         justify-content: flex-end;
