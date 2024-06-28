@@ -1,14 +1,24 @@
-# Landing page com grid agencia xyz
+![capa - landing page com grid](https://github.com/JoaoVitor2004/landing-page-com-grid-agencia-xyz/assets/143558833/c05574b0-cf98-45e2-a0b5-9acae0bd3df2)
 
-Uma landing page de uma agência onde mostra a parte de sobre, os projetos, e a parte de contato, desenvolvida com flex e grid e sendo responsiva
+## 🎯 Introdução
 
-![Captura de tela 1](https://github.com/JoaoVitor2004/landing-page-com-grid-agencia-xyz/assets/143558833/a8eab71c-ffb3-4281-8390-1c3149f5a974)
+Projeto de uma agência ficticia onde mostra seção de sobre, projetos, serviços, e contato, ele tem um menu hamburguer para navegação mobile e estando responsivo.
 
-## 🛠 Ferramenta e tecnologias utilizadas
+### ⚙ Guia de instalação
 
-- Visual studio code
-  
-  -  HTML
-  -  CSS
+Precisa ter somente um navegador instalado em sua maquina para acessar apartir deste [endereço](https://JoaoVitor2004.github.io/landing-page-com-grid-agencia-xyz)
 
-<p>🔗 Link para acessar o <a href="https://joaovitor2004.github.io/landing-page-com-grid-agencia-xyz/">site</a></p>
+### 🛠 Tecnologias utilizadas
+
+<div>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo do HTML">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="logo do CSS">
+</div>
+
+### 👨‍💻 Autores / Colaboradores
+
+- **João Vitor** - Frontend do projeto - [João Vitor](https://www.linkedin.com/in/JoaoVitorsouzaa)
+
+### 📃 Licença
+
+Este projeto está sob a licença [MIT]()
