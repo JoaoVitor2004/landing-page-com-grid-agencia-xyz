@@ -17,7 +17,7 @@ Precisa ter somente um navegador instalado em sua maquina para acessar apartir d
 
 ### 👨‍💻 Autores / Colaboradores
 
-- **João Vitor** - Frontend do projeto - [João Vitor](https://www.linkedin.com/in/Joaovitorsouzaa)
+- **João Vitor** - Frontend do projeto - [João Vitor](https://www.linkedin.com/in/joão-vitor-souzaa)
 
 ### 📃 Licença
 
